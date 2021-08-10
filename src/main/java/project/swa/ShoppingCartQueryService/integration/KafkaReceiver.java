@@ -5,7 +5,7 @@ import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.handler.annotation.Headers;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
-import project.swa.ShoppingCartCommandService.ShoppingCartDTO;
+import project.swa.ShoppingCartCommandService.service.ShoppingCartDTO;
 
 import java.util.List;
 

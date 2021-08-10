@@ -1,8 +1,7 @@
-package project.swa.ShoppingCartCommandService;
+package project.swa.ShoppingCartCommandService.service;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import project.swa.ShoppingCartQueryService.service.CartLineDTO;
 
 import java.util.List;
 

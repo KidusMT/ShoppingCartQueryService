@@ -7,6 +7,8 @@ spring:
       host: localhost
       port: 27017
       database: shoppingcartquery
+  application:
+    name: ShoppingCartQueryService
 
   kafka:
     bootstrap-servers: localhost:9092
@@ -20,3 +22,8 @@ spring:
           json:
             trusted:
               packages: project.swa.ShoppingCartCommandService.service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/, http://localhost:8762/eureka/

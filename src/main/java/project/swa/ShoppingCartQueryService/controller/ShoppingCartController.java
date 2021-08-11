@@ -11,7 +11,7 @@ import project.swa.ShoppingCartQueryService.service.ShoppingCartService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/shopping")
+@RequestMapping("/shoppingquery")
 public class ShoppingCartController {
 
     @Autowired

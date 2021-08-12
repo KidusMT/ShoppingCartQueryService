@@ -1,17 +1,16 @@
 package project.swa.ShoppingCartCommandService.service;
 
 //@Data
-//@NoArgsConstructor
-public class CartLineDTO {
+public class CartLine {
     private int quantity;
     private ProductDTO product;
 
-    public CartLineDTO(int quantity, ProductDTO product) {
+    public CartLine(int quantity, ProductDTO product) {
         this.quantity = quantity;
         this.product = product;
     }
 
-    public CartLineDTO() {
+    public CartLine() {
     }
 
     public int getQuantity() {

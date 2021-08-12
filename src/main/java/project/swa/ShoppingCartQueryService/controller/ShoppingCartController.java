@@ -8,8 +8,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import project.swa.ShoppingCartQueryService.domain.ShoppingCartEvent;
 import project.swa.ShoppingCartQueryService.exception.ShoppingCartNotFoundException;
-import project.swa.ShoppingCartQueryService.service.ShoppingCartDTO;
 import project.swa.ShoppingCartQueryService.service.ShoppingCartService;
 
 import java.util.List;
@@ -25,7 +25,7 @@ public class ShoppingCartController {
     @GetMapping
     public ResponseEntity<?> getCustomers() {
         logger.info("Calling GET /shoppingquery");
-        List<ShoppingCartDTO> customerDTO1 = shoppingCartService.getAll();
+        List<ShoppingCartEvent> customerDTO1 = shoppingCartService.getAll();
         try {
             if (customerDTO1 != null) {
                 return new ResponseEntity<>(customerDTO1, HttpStatus.CREATED);

@@ -1,11 +1,14 @@
-package project.swa.ShoppingCartQueryService.domain;
+package project.swa.ShoppingCartCommandService.service;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
 //@Data
-
+@Document(collection = "SHOPPINGCART")
 public class ShoppingCart {
-
+    @Id
     private String shoppingCartNumber;
     private List<CartLine> cartLines;
 
